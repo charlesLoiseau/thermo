@@ -16,14 +16,34 @@ class Beef extends StatelessWidget {
           ),
           new Text("goal is to: $_temp°c"),
           new IconButton(
+            iconSize: 100.0,
             icon: new Icon(
-              const IconData(
-                0xe902,
-                fontFamily: 'thermo',
-              ),
+              Icons.person,
+              color: Colors.red[900],
+              //size: 100.0,
             ),
-            onPressed: () {}
-          )
+            onPressed: () {_temp = "50";},
+          ),
+          new IconButton(
+            iconSize: 100.0,
+            icon: new Icon(
+              Icons.person,
+              color: Colors.red[600],
+              //size: 100.0,
+            ),
+            
+            onPressed: () {_temp = "50";},
+          ),
+          new IconButton(
+            iconSize: 100.0,
+            icon: new Icon(
+              Icons.person,
+              color: Colors.red[300],
+              //size: 100.0,
+            ),
+            onPressed: () {_temp = "50";},
+          ),
+          
         ],
       ),
     );
